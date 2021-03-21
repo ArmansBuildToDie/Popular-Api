@@ -8,7 +8,7 @@
                     "storeAs": "number"
                 },
                 "Visits": {
-                    "storeField":" data/0/visits",
+                    "storeField": "data/0/visits",
                     "storeAs": "number"
                 }
             }
