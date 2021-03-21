@@ -31,7 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Get API
-        uses: ThatTimothy/api-grabber@v1
+        uses: ThatTimothy/api-grabber@v1.0.0
         with:
           options: "options.json"
           
