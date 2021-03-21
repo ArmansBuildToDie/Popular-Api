@@ -1,0 +1,50 @@
+{
+    "data.json": [
+        {
+            "url": "https://games.roblox.com/v1/games?universeIds=640204840",
+            "values": {
+                "Playing": {
+                    "parseStart": "\"playing\":",
+                    "parseEnd": ",",
+                    "storeAs": "number"
+                },
+                "Visits": {
+                    "parseStart": "\"visits\":",
+                    "parseEnd": ",",
+                    "storeAs": "number"
+                },
+                "RawData": {
+
+                }
+            }
+        },
+        {
+            "url": "https://games.roblox.com/v1/games/640204840/favorites/count",
+            "values": {
+                "Favorites": {
+                    "parseStart": "{\"favoritesCount\":",
+                    "parseEnd": "}",
+                    "storeAs": "number"
+                }
+            }
+        },
+        {
+            "url": "https://games.roblox.com/v1/games/votes?universeIds=640204840",
+            "values": {
+                "Likes": {
+                    "parseStart": "\"upVotes\":",
+                    "parseEnd": ",",
+                    "storeAs": "number"
+                },
+                "Dislikes": {
+                    "parseStart": "\"downVotes\":",
+                    "parseEnd": "}",
+                    "storeAs": "number"
+                },
+                "VotesId": {
+                    "storeField": "data/0/id"
+                }
+            }
+        }
+    ]
+}
