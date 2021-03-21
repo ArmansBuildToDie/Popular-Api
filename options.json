@@ -1,5 +1,42 @@
 {
-    "data.json": [
+    "usingJsonFields.json": [
+        {
+            "url": "https://games.roblox.com/v1/games?universeIds=640204840",
+            "values": {
+                "Playing": {
+                    "storeField": "data/0/playing",
+                    "storeAs": "number"
+                },
+                "Visits": {
+                    "storeField":" data/0/visits",
+                    "storeAs": "number"
+                }
+            }
+        },
+        {
+            "url": "https://games.roblox.com/v1/games/640204840/favorites/count",
+            "values": {
+                "Favorites": {
+                    "storeField": "favoritesCount",
+                    "storeAs": "number"
+                }
+            }
+        },
+        {
+            "url": "https://games.roblox.com/v1/games/votes?universeIds=640204840",
+            "values": {
+                "Likes": {
+                    "storeField": "data/0/upVotes",
+                    "storeAs": "number"
+                },
+                "Dislikes": {
+                    "storeField": "data/0/downVotes",
+                    "storeAs": "number"
+                }
+            }
+        }
+    ],
+    "byRawParsing.json": [
         {
             "url": "https://games.roblox.com/v1/games?universeIds=640204840",
             "values": {
@@ -12,9 +49,6 @@
                     "parseStart": "\"visits\":",
                     "parseEnd": ",",
                     "storeAs": "number"
-                },
-                "RawData": {
-
                 }
             }
         },
@@ -40,9 +74,32 @@
                     "parseStart": "\"downVotes\":",
                     "parseEnd": "}",
                     "storeAs": "number"
-                },
-                "VotesId": {
-                    "storeField": "data/0/id"
+                }
+            }
+        }
+    ],
+    "justRawData.json": [
+        {
+            "url": "https://games.roblox.com/v1/games?universeIds=640204840",
+            "values": {
+                "RawData": {
+                    
+                }
+            }
+        },
+        {
+            "url": "https://games.roblox.com/v1/games/640204840/favorites/count",
+            "values": {
+                "RawFavoriteData": {
+
+                }
+            }
+        },
+        {
+            "url": "https://games.roblox.com/v1/games/votes?universeIds=640204840",
+            "values": {
+                "RawVotesData": {
+                    
                 }
             }
         }
