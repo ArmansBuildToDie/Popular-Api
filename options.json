@@ -3,6 +3,9 @@
         {
             "url": "https://games.roblox.com/v1/games/list?model.pageContext.isSeeAllPage=true",
             "values": {
+                "thisWillFail": {
+                    "storeField": "thisDoesNotExist"
+                },
                 "content": {
                     
                 }
