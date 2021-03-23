@@ -26,7 +26,7 @@ jobs:
       
       - name: Push changes to GitHub
         run: |
-          git config user.name Data Updater
+          git config user.name Data_Updater
           git config user.email github-actions@github.com
           git add .
           git commit -m "Update Data"
